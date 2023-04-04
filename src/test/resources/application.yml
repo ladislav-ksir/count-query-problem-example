@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=Oracle
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.format_sql: false
+    show-sql: true
+  test:
+    database:
+      replace: none
+  main:
+    allow-bean-definition-overriding: true
+  sql:
+    init:
+      mode: embedded
+      platform: h2
+      encoding: UTF-8
